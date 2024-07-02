@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:url("food.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.text-blob {
+    font-size: 70px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin:0%;
+    padding: 5px;
+    border-radius: 7px;
+    width: 101%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* fade-in and fade-out animation */
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+.fade-out {
+    animation: fadeOut ease 5s;
+    -webkit-animation: fadeOut ease 5s;
+    -moz-animation: fadeOut ease 5s;
+    -o-animation: fadeOut ease 5s;
+    -ms-animation: fadeOut ease 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+.container {
+    position: absolute;
+    top: calc(45% - 200px);
+    left: calc(45% - 350px);
+    padding: 3px;
+    min-width: 700px;
+    min-height: 350px;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #222;
+}
+
+form#form {
+    background-color: rgb(238 238 238 / 60%);
+    width: 100%;
+    min-height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.field {
+    margin: 10px 0px;
+}
+
+input {
+    position: relative;
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 0px;
+    outline: 0;
+    border-bottom: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+.age label::after ,
+.height label::after ,
+.veg_or_nonveg label::after,
+.disease label::after,
+.region label::after,
+.allergics label::after,
+.physical_activity label::after,
+.weight label::after {
+    content: "*";
+    position: absolute;
+    color: red;
+    margin-left: 5px;
+    font-size: 16px;
+}
+input::placeholder {
+    color: #a7a7a7;
+}
+
+button.submit {
+    background-color: rgb(83, 70, 152);
+    width:100%; 
+    padding:5px;
+    margin-top: 10px;
+    left: calc(45% - 350px);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+select {
+    position: relative;
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 0px;
+    outline: 0;
+    border-bottom: 1px solid #a7a7a7;
+    border-radius: 5px;
+}

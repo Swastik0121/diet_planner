@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diet Planner</title>
+    <link href="static/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="text-blob">Diet and Workout Planner</h1>
+    <div class="container">
+      <form action="/recommend" method="post" id="form">
+        <div class="column one">
+          <div class="field age">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="10"
+              max="90"
+              step="1"
+              placeholder="Specify your Age"
+              required
+            />
+          </div>
+
+          <div class="field gender">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="field height">
+            <label for="height">Height(cms)</label>
+            <input
+              type="number"
+              name="height"
+              id="height"
+              min="120"
+              max="250"
+              step="1"
+              placeholder="Specify your Height"
+              required
+            />
+          </div>
+
+          <div class="field weight">
+            <label for="weight">Weight(kgs)</label>
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              min="30"
+              max="200"
+              step="1"
+              placeholder="Specify your Weight"
+              required
+            />
+          </div>
+
+          <div class="field physical_activity">
+            <label for="physical_activity">Level of Physical Activity</label>
+            <select id="physical_activity" name="physical_activity">
+              <option value="Often">Often</option>
+              <option value="Not Often">Not Often</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="column two">
+          <div class="field veg_or_nonveg">
+            <label for="veg_or_nonveg">Veg or Nonveg</label>
+            <select id="veg_or_nonveg" name="veg_or_nonveg">
+              <option value="veg">Veg</option>
+              <option value="nonveg">Nonveg</option>
+            </select>
+          </div>
+
+          <div class="field disease">
+            <label for="disease">Disease</label>
+            <input
+              type="text"
+              name="disease"
+              id="disease"
+              placeholder="Specify Your Disease"
+              required
+            />
+          </div>
+
+          <div class="field region">
+            <label for="region">Region</label>
+            <input
+              type="text"
+              name="region"
+              id="region"
+              placeholder="Specify your region"
+              required
+            />
+          </div>
+
+          <div class="field allergics">
+            <label for="allergics">Allergy</label>
+            <input
+              type="text"
+              name="allergics"
+              id="allergics"
+              placeholder="Specify your allergies"
+              required
+            />
+          </div>
+
+          <div class="field goal">
+            <label for="goal">Goal</label>
+            <select id="goal" name="goal">
+              <option value="Fat Loss">Fat Loss</option>
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="Maintenance">Maintenance</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="submit" id="recommend">
+          Recommend Diet
+        </button>
+      </form>
+    </div>
+    <script src="static/scripts.js"></script>
+  </body>
+</html>

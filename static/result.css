@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("result_food.jpg");
+    background-size:cover; 
+    background-repeat:no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    position: fixed;
+    top: calc(43% - 210px);
+    right: calc(30% - 0px);
+    padding: 3px;
+    min-width: 800px;
+    max-height: 613px;
+    font-weight: 400;
+    color:white;
+    height: 100%;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.names{
+    margin: 10px 0px;
+    font-size: 25px;
+    direction: ltr;
+}
+
+.recommendations{
+    margin: 10px 0px;
+    direction: ltr;
+}
+
+.text-blob {
+    font-size: 70px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin:0%;
+    padding: 5px;
+    border-radius: 7px;
+    width: 101%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* fade-in and fade-out animation */
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+.fade-out {
+    animation: fadeOut ease 5s;
+    -webkit-animation: fadeOut ease 5s;
+    -moz-animation: fadeOut ease 5s;
+    -o-animation: fadeOut ease 5s;
+    -ms-animation: fadeOut ease 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}

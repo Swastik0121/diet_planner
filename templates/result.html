@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recommended Diets</title>
+    <link href="static/result.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="text-blob">Your Diet and Workout plan is ready</h1>
+    <div class="container">
+      <h3 class="names">Recommended Breakfast:</h3>
+      <div class="recommendations">
+        {% for i in breakfast_names %}
+
+        <p>{{i}}</p>
+
+        {% endfor %}
+      </div>
+
+      <h3 class="names">Recommended Lunch:</h3>
+      <div class="recommendations">
+        {% for i in lunch_names %}
+
+        <p>{{i}}</p>
+
+        {% endfor %}
+      </div>
+
+      <h3 class="names">Recommended Dinner:</h3>
+      <div class="recommendations">
+        {% for i in dinner_names %}
+
+        <p>{{i}}</p>
+
+        {% endfor %}
+      </div>
+
+      <h3 class="names">Recommended Workouts:</h3>
+      <div class="recommendations">
+        {% for i in workout_names %}
+
+        <p>{{i}}</p>
+
+        {% endfor %}
+      </div>
+    </div>
+
+    <script src="static/result.js"></script>
+  </body>
+</html>
